@@ -33,7 +33,7 @@ const TodoList = () => {
           </form>
           <ul>
             {todos.map((todo, index) => (
-              <li key={todo} className="todo-item">
+              <li key={index} className="todo-item">
                 {todo}
                 <button className='deleteItem' type="button" onClick={() => handleDelete(index)}>
                   Delete
